@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+/* Remove conflicting :root variables */
+/*
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+*/
+
+@theme inline {
+  /* These can stay if used elsewhere, or be removed if not */
+  /* --color-background: var(--background); */
+  /* --color-foreground: var(--foreground); */
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* Remove OS-level dark mode override */
+/*
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+*/
+
+body {
+  /* Remove direct background/color application */
+  /* background: var(--background); */
+  /* color: var(--foreground); */
+  /* Keep font settings if desired, though Tailwind likely handles this too */
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
